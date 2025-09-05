@@ -71,13 +71,17 @@ def index():
         ortaklik_payi = net_kar * 20 / 100
 
         sonuc = (
-            f"Toplam Satış: {toplam_satis:,.2f} ₺\\n"
-            f"Toplam Borsa: {toplam_borsa:,.2f} ₺\\n"
-            f"Net Kar: {net_kar:,.2f} ₺\\n"
-            f"Ortaklık Payı (%20): {ortaklik_payi:,.2f} ₺"
+            f"Toplam Satış: {toplam_satis:,.2f} ₺\\  "
+            
+            f"Toplam Borsa: {toplam_borsa:,.2f} ₺\\  "
+            
+            f"Net Kar: {net_kar:,.2f} ₺\\  "
+            
+            f"Kdv (%20): {kdv:,.2f} ₺"
         )
 
     return render_template_string(html, sonuc=sonuc)
 
 if __name__ == "__main__":
     app.run(debug=True)
+
