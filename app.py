@@ -14,7 +14,7 @@ html = """
 <body class="bg-light">
 <div class="container mt-5">
     <div class="card shadow-lg p-4">
-        <h2 class="text-center text-primary">Kuyumcu Hesaplama</h2>
+        <h2 class="text-center text-primary">Ufuk Bük Saygıyla Sunar</h2>
         <form method="POST">
             <table class="table table-bordered mt-3">
                 <thead class="table-secondary">
@@ -71,9 +71,9 @@ def index():
         kdv_20 = net_kar * 20 / 100
 
         sonuc = (
-            f"Toplam Satış: {toplam_satis:,.2f} ₺\\-"
-            f"Toplam Borsa: {toplam_borsa:,.2f} ₺\\-"
-            f"Net Kar: {net_kar:,.2f} ₺\\-"
+            f"Toplam Satış: {toplam_satis:,.2f} ₺\\  "
+            f"Toplam Borsa: {toplam_borsa:,.2f} ₺\\  "
+            f"Net Kar: {net_kar:,.2f} ₺\\  "
             f"Kdv 20: {kdv_20:,.2f} ₺"
         )
 
@@ -81,6 +81,7 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
