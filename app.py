@@ -71,9 +71,9 @@ def index():
         ortaklik_payi = net_kar * 20 / 100
 
         sonuc = (
-            f"Toplam Satış: {toplam_satis:,.2f} ₺\\  "
-            f"Toplam Borsa: {toplam_borsa:,.2f} ₺\\  "
-            f"Net Kar: {net_kar:,.2f} ₺\\  "
+            f"Toplam Satış: {toplam_satis:,.2f} ₺\\-"
+            f"Toplam Borsa: {toplam_borsa:,.2f} ₺\\-"
+            f"Net Kar: {net_kar:,.2f} ₺\\-"
             f"Kdv (%20): {kdv:,.2f} ₺"
         )
 
@@ -81,4 +81,5 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
