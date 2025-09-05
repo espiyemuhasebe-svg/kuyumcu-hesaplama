@@ -68,7 +68,7 @@ def index():
         toplam_satis = sum(gramlar[i] * satis_fiyatlari[i] for i in range(len(gramlar)))
         toplam_borsa = sum(gramlar[i] * borsa_fiyatlari[i] for i in range(len(gramlar)))
         net_kar = (toplam_satis - toplam_borsa) / 1.2 if toplam_satis > 0 else 0
-        ortaklik_payi = net_kar * 20 / 100
+        KDV = net_kar * 20 / 100
 
         sonuc = (
             f"Toplam Satış: {toplam_satis:,.2f} ₺\\-"
@@ -81,5 +81,6 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
