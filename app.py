@@ -8,7 +8,7 @@ html = """
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Kuyumcu Hesaplama</title>
+    <title>Ufuk Bük Saygıyla Sunar</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body class="bg-light">
@@ -68,7 +68,7 @@ def index():
         toplam_satis = sum(gramlar[i] * satis_fiyatlari[i] for i in range(len(gramlar)))
         toplam_borsa = sum(gramlar[i] * borsa_fiyatlari[i] for i in range(len(gramlar)))
         net_kar = (toplam_satis - toplam_borsa) / 1.2 if toplam_satis > 0 else 0
-        Kdv_20 = net_kar * 20 / 100
+        kdv_20 = net_kar * 20 / 100
 
         sonuc = (
             f"Toplam Satış: {toplam_satis:,.2f} ₺\\-"
@@ -81,6 +81,7 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
